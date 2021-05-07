@@ -1,0 +1,91 @@
+html,
+body {
+  --backgroundColor: #f8f5f2;
+  --themeColor: #bb1e1e;
+  --themeColor2: #b21919;
+  --themeColorLight: #e9c3c3;
+  --themeColorDark: #8b2020;
+  --borderColor: rgb(151 151 151 / 10%);
+  --txtColor: #1d1d1b;
+  --txtAltColor: #ffffff;
+  --titleColor: #000000;
+  --categoryColor: #1e71bb;
+  --shadowColor: rgba(0, 0, 0, 0.2);
+  --shadowColor2:rgb(29, 29, 27, 0.5);
+
+  --txtSizeXS:10px;
+  --txtSizeS:12px;
+  --txtSizeM:14px;
+  --txtSizeL:16px;
+  --txtSizeXL:25px;
+  --txtSizeXXL:32px;
+
+  padding: 0;
+  margin: 0;
+  background-color: var(--backgroundColor);
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  height: 24px;
+  width: 49px;
+  color: var(--txtColor);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+  line-height: 24px;
+}
+
+button {
+  height: 40px;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txtColor);
+  outline: none;
+  border: none;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding: 0 20px;
+  background-color: transparent;
+
+  &:hover {
+    color: var(--themeColor);
+  }
+  &.active {
+    color: var(--themeColor);
+    background-color: var(--themeColorLight);
+  }
+}
+::-webkit-scrollbar{
+    width: 15px;
+    height: 15px;
+}
+@media(orientation:portrait){
+    ::-webkit-scrollbar{
+        width: 2px !important;
+        height: 2px !important;
+    }
+}
+::-webkit-scrollbar-track{  
+    background-color: transparent;  
+}
+::-webkit-scrollbar-thumb{  
+    border-radius: 1px;  
+    background-color: var(--shadowColor);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--themeColor);
+}
+
+.center{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}

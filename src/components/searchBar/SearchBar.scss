@@ -1,0 +1,48 @@
+.searchBar {
+  //--searchHeight: 50px;
+  //--searchPadding: 5px;
+
+  max-width: 725px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: var(--txtAltColor);
+  box-shadow: 0px 2px 3px -1px var(--shadowColor);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  & > label {
+    //height: calc(var(--searchHeight) - (var(--searchPadding) * 2));
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--shadowColor);
+    cursor: text;
+  }
+  & > input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+
+    &::placeholder {
+      color: var(--shadowColor);
+    }
+  }
+
+  button {
+    border-radius: 6px;
+    background-color: var(--themeColor);
+    color: var(--txtAltColor);
+
+    &:hover {
+      background-color: var(--themeColorDark);
+    }
+  }
+}

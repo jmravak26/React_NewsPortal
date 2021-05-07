@@ -1,0 +1,6 @@
+primjer dizajna:	https://projects.invisionapp.com/d/main#/projects
+
+apikey: 		c18a3f4e977c46519d1090244b4e0bc1
+
+korisne stranice:	https://fontawesome.com/icons?d=gallery&p=2
+			https://lodash.com/

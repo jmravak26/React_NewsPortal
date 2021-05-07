@@ -1,0 +1,10 @@
+.header {
+    color: var(--txtColor);
+    font-size: var(--txtSizeXXL);
+    font-weight: 900;
+    letter-spacing: 0;
+
+    & > .firstLogoLetters {
+        color: var(--themeColor);
+    }
+}
